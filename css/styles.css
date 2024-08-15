@@ -10934,6 +10934,7 @@ header.masthead {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  background-clip: border-box;
 }
 
 header.masthead h1, header.masthead .h1 {
