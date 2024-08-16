@@ -284,8 +284,8 @@ $(window).on('load', function() {
     }
     pixelsAbove.push(Number.MAX_VALUE);
 
-    //$('div#contents').scroll(function() {
-      //var currentPosition = $(this).scrollTop();
+    $('div#contents').scroll(function() {
+      var currentPosition = $(this).scrollTop();
 
       // Make title disappear on scroll
       if (currentPosition < 200) {
@@ -435,8 +435,8 @@ $(window).on('load', function() {
         markers[i]['_pixelsAbove'] = pixelsAbove[i];
         markers[i].on('click', function() {
           var pixels = parseInt($(this)[0]['_pixelsAbove']) + 5;
-         // $('div#contents').animate({
-           // scrollTop: pixels + 'px'});
+         $('div#contents').animate({
+           scrollTop: pixels + 'px'});
         });
         bounds.push(markers[i].getLatLng());
       }
@@ -447,7 +447,7 @@ $(window).on('load', function() {
     $('div.loader').css('visibility', 'hidden');
 
     $('div#container0').addClass("in-focus");
-    //$('div#contents').animate({scrollTop: '1px'});
+    $('div#contents').animate({scrollTop: '1px'});
 
     // On first load, check hash and if it contains an number, scroll down
     if (parseInt(location.hash.substr(1))) {
