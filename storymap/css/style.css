@@ -158,6 +158,7 @@ a.source:visited {
 }
 
 #header {
+  position: fixed;\
   padding: 5px 0;
   text-align: center;
   color: #333;
@@ -165,12 +166,12 @@ a.source:visited {
 
 /* Storymap title & subtitle */
 h1 {
-  margin: 0;
+  margin: 2;
   font-size: 1.5em;
 }
 
 h2 {
-  margin: 0;
+  margin: 2;
   font-size: 1.1em;
   font-weight: normal;
 }
