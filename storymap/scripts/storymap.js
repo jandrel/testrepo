@@ -447,7 +447,7 @@ $(window).on('load', function() {
     $('div.loader').css('visibility', 'hidden');
 
     $('div#container0').addClass("in-focus");
-    $('div#contents').animate({scrollTop: '1px'});
+    //$('div#contents').animate({scrollTop: '1px'});
 
     // On first load, check hash and if it contains an number, scroll down
     if (parseInt(location.hash.substr(1))) {
